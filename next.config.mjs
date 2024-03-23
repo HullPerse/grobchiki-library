@@ -4,7 +4,7 @@ import million from "million/compiler";
 const nextConfig = {
   reactStrictMode: true,
   distDir: "dist",
-  output: "export",
+  optimizeFonts: true,
   images: {
     remotePatterns: [
       {
