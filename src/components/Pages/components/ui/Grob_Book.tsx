@@ -1,9 +1,9 @@
 "use client";
 
+import Image from "next/image";
+
 import { useContext } from "react";
 import { GrobContext } from "@/components/providers/stateProvider";
-
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Grob_Book({ data }: any) {
   const { setOpenModule, setModuleContent, setFilter } =
@@ -18,10 +18,16 @@ export default function Grob_Book({ data }: any) {
         setOpenModule(true);
       }}
     >
-      <LazyLoadImage
-        src={`../../../../images/${data.images["1"].url}`}
+      <Image
+        src={`/images/${data.images["1"].url}`}
+        placeholder="blur"
+        blurDataURL={`/images/${data}`}
+        alt="book"
+        width={480}
+        height={360}
         className="w-auto h-auto rounded mx-2 mt-2 border-[1px] border-white/10 transition-transform transform hover:scale-105"
         draggable={false}
+        loading="lazy"
       />
 
       <div className="inline-flex justify-between select-none">
