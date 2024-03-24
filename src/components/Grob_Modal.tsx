@@ -25,7 +25,7 @@ export default function Modal() {
           </div>
           <section className="flex flex-col justify-center items-center z-10 max-sm:w-full max-sm:h-full max-sm:rounded-none w-fit bg-[#262626] p-2 rounded">
             <LazyLoadImage
-              src={`./src/images/${
+              src={`images/${
                 modalContent?.images
                   ? modalContent.images[currentImage].url
                   : null

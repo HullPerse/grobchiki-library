@@ -16,7 +16,7 @@ export default function Grob_Picture({ data }: { data: string }) {
       }}
     >
       <LazyLoadImage
-        src={`./src/images/${data}`}
+        src={`images/${data}`}
         className="w-auto h-auto rounded mx-2 mt-2 border-[1px] border-white/10 transition-transform transform hover:scale-105 rounded"
       />
 

@@ -20,7 +20,7 @@ export default function Modal() {
         <div className="fixed inset-0 z-10 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none ">
           <section className="flex flex-col justify-center items-center z-10 max-sm:w-full max-sm:h-full max-sm:rounded-none w-fit bg-[#262626] p-2 rounded">
             <LazyLoadImage
-              src={`./src/images/${pictureContent}`}
+              src={`images/${pictureContent}`}
               className="w-full min-h-auto h-auto sm:h-[450px] max-h-[450px] rounded border-[2px] border-white/20"
             />
 

@@ -17,7 +17,7 @@ export default function GrobNavBar({ data }: { data: FetchedBookData }) {
       }}
     >
       <LazyLoadImage
-        src={`./src/images/${data.images["1"].url}`}
+        src={`images/${data.images["1"].url}`}
         alt={data.author}
         className="w-auto h-auto rounded mx-2 mt-2 border-[1px] border-white/10 transition-transform transform hover:scale-105"
       />
