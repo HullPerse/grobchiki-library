@@ -13,7 +13,7 @@ export default function GrobPage() {
   const [pictureData, setPictureData] = useState<string[] | null>(null);
 
   useEffect(() => {
-    fetch("./src/data/data.json")
+    fetch("data.json")
       .then(response => response.json())
       .then((data: FetchedData) => {
         const newData = Object.entries(data[0]).map(([, value]) => value);
